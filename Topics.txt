@@ -1,0 +1,12 @@
+The topics covered are
+LINQ
+Lambda expression
+Filter
+Sorting
+First() and FirstOrDefault()
+Last and LastOrDefault()
+Aggregate function
+Zip function
+Any()
+All()
+skip and take in Linq

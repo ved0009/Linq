@@ -1,0 +1,21 @@
+# Ignore build results and directories
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Ignore common C# build files
+*.dll
+*.exe
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.builds
+*.log
+*.cache
+
+# Ignore Visual Studio specific files and folders
+.vs/
+/Properties/launchSettings.json

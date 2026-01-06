@@ -60,27 +60,63 @@
 //Console.ReadLine();
 
 
+
+
 // Shorting
+//var list = new List<int>() { 1, 3, 4, 5, 2, 2, 2, 0, 6, 7 };
 
-var list = new List<int>() { 1, 3, 4, 5, 2, 2, 2, 0, 6, 7 };
+//var listASC = list
+//                   .OrderBy(x => x)
+//                   .Distinct()
+//                   .ToList();
+//var listDESC = list
+//                    .OrderByDescending(x => x)
+//                    .Distinct()
+//                    .ToList();
 
-var listASC = list
-                   .OrderBy(x => x)
-                   .Distinct()
-                   .ToList();
-var listDESC = list
-                    .OrderByDescending(x => x)
-                    .Distinct()
-                    .ToList();
+//Console.WriteLine("Numbers in Assending:");
+//foreach (var number in listASC)
+//{
+//    Console.WriteLine(number);
+//}
 
-Console.WriteLine("Numbers in Assending:");
-foreach (var number in listASC)
+//Console.WriteLine("Numbers in Desending:");
+//foreach (var number in listDESC)
+//{
+//    Console.WriteLine(number);
+//}
+
+
+// First or firstOrDefault Or LastOrDefault
+
+var list = new List<int>() { 1, 3, 5,  7 };
+
+var FirstVariable = list.First();
+Console.WriteLine(FirstVariable.ToString());
+
+try
 {
-    Console.WriteLine(number);
+
+var ErroredVariable = list
+                      .Where(x => x % 2 == 0)
+                      .First();
+// Here SecondVariable result is 0 or null because there is no { 1, 3, 5,  7 } even number in list so it Gives Exception of System.InvalidOperationException: 'Sequence contains no elements'
+// To resolve this We have firstOrDefault
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Exception Occurs: " + ex.Message.ToString());
 }
 
-Console.WriteLine("Numbers in Desending:");
-foreach (var number in listDESC)
-{
-    Console.WriteLine(number);
-}
+//firstOrDefault
+
+var FixedVariable = list
+                      .Where(x => x % 2 == 0)
+                      .FirstOrDefault();
+
+Console.WriteLine(FixedVariable.ToString());
+
+var LastVariable = list
+                      .LastOrDefault();
+
+Console.WriteLine(LastVariable.ToString());

@@ -1,21 +1,35 @@
-﻿  
+﻿
 
-        // Fetch Distinct Numbers from List using LINQ
-        var listNumbers = new List<int>() { 1, 3, 4, 5, 2, 2, 2, 0, 6, 7 };
-        var DistNumber = listNumbers.Distinct().ToList();
+// Fetch Distinct Numbers from List using LINQ
+var listNumbers = new List<int>() { 1, 3, 4, 5, 2, 2, 2, 0, 6, 7 };
+var DistNumber = listNumbers.Distinct().ToList();
+
+Console.WriteLine("--------------");
+
+foreach (var number in DistNumber)
+{
+    Console.WriteLine($"Number is : " + number);
+}
+
+Console.WriteLine("--------------");
+
+
+
+// Fetch Distinct Words from List using LINQ
+var listWords = new List<string>() { "Ved", "Abhi", "Monu", "Lucky", "Ved", "Monu"};
+        var DistWords = listWords.Distinct().ToList();
 
         Console.WriteLine("--------------");
-
-        foreach (var number in DistNumber)
+        Console.WriteLine( "Distinct Words are :" );
+        foreach (var word in DistWords)
         {
-            Console.WriteLine($"Number is : " + number);
+            Console.WriteLine(word);
         }
 
         Console.WriteLine("--------------");
         Console.ReadLine();
 
- 
 
 
 
- 
+

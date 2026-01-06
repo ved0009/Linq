@@ -3,6 +3,8 @@
 [Rr]elease/
 [Bb]in/
 [Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
 
 # Ignore common C# build files
 *.dll

@@ -84,6 +84,7 @@ foreach (var record in Skip)
 #region Grouping Operator – GroupBy
 
 
+//Example:1
 Console.WriteLine("\n\nGrouping Operator – GroupBy");
 /*Even / Odd grouping. */
 // TODO:
@@ -104,6 +105,30 @@ foreach (var i in GroupData)
         Console.WriteLine(value);
     }
 }
+
+
+//Example 2:
+// 1. Words ko unki Length ke basis par group karo
+// 2. Key = Length
+// 3. Har length ke words print karo
+
+var words = new List<string>()
+{
+    "Ved", "Abhi", "Monu", "Lucky", "Rohit", "Ajay"
+};
+Console.WriteLine("\n");
+
+
+var groupData = words.GroupBy(x => x.Length);
+foreach (var i in groupData)
+{
+    Console.WriteLine($"Length: " + i.Key);
+    foreach (var value in i)
+    {
+        Console.WriteLine(value);
+    }
+}
+
 
 #endregion
 
@@ -282,3 +307,4 @@ var contains = marks.Contains(80);
 Console.WriteLine(contains);
 
 #endregion
+

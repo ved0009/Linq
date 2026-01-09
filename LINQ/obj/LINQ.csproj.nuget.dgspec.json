@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ\\LINQ.csproj": {}
+    "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ\\LINQ.csproj": {
+    "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ\\LINQ.csproj",
+        "projectUniqueName": "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ.csproj",
         "projectName": "LINQ",
-        "projectPath": "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ\\LINQ.csproj",
+        "projectPath": "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ.csproj",
         "packagesPath": "C:\\Users\\eAppl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\LINQ\\obj\\",
+        "outputPath": "C:\\Users\\eAppl\\OneDrive\\Desktop\\eA\\myProjects\\LINQ\\LINQ\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
